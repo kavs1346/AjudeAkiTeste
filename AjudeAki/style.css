@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+
+nav {
+    height: 100vh;
+    width: 20vw;
+    /* background-color: antiquewhite; */
+    position: fixed;
+}
+
+#logo {
+    height: 20%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    width: 60%;
+    height: 110%;
+}
+
+#lista {
+    height: 80%;
+    width: 100%;
+    background-color: aquamarine;
+    border-radius: 0 20px 0 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#perfil {
+    width: 100%;
+    height: 20%;
+    background-color: aqua;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    a {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        text-decoration: none;
+        color: white;
+        font-family: "Phudu", system-ui;
+    }
+    img {
+        width: 50%;
+    }
+    p {
+        margin-top: 5px;
+        
+    }
+}
+
+#home {
+    height: 20%;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        font-family: "Phudu", system-ui;
+        font-weight: 400;
+        justify-content: center;
+        width: 80%;
+    }
+    img {
+        width: 15%;
+    }
+    p {
+        font-size: 14px;
+        font-family: "Phudu", system-ui;
+        font-weight: 400;
+    }
+}
