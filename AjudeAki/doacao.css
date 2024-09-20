@@ -223,41 +223,147 @@ nav {
     font-weight: 700;
 }
 
+/*Selecione seu tipo de doação*/
+
 .b {
     display: flex;
     background-color: aqua;
     width: 174vh;
-    height: 15vw;
+    height: 13vw;
     margin-left: 20vw;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    display: inline-block;
 }
+
+.b img {
+    width: 225px;
+    margin-left: 75px;
+}
+
+/*Modo de Pagamento*/
 
 .d {
     display: flex;
-    background-color: greenyellow;
     width: 174vh;
-    height: 25px;
-    margin-left: 20vw;
+    height: 35px;
+    margin-left: 17vw;
+    margin-bottom: 40px;
     justify-content: start;
     align-items: flex-start;
 }
 
 .d p {
-    margin-left: 230px;
-
+    margin-left: 190px;
+    font-size: 25px;
+    color: #0232B5;
+    font-family: "Phudu", system-ui;
+    font-weight: 700;
 }
+
+/*Botão Pix*/
 
 .e {
     display: flex;
     background-color: blueviolet;
-    width: 174vh;
-    height: 95px;
-    margin-left: 20vw;
+    width: 80vh;
+    height: 50px;
+    margin-top: 14px;
+    margin-left: 23vw;
     justify-content: start;
     align-items: flex-start;
+    border-radius: 15px;
+    border-top: 100px;
+    border-color: #0232B5;
 }
 
 .e p{
-    margin-left: 140px;
+    margin-top: 1px;
+    margin-left: 30px;
+    color: black;
+    font-size: 18px;
+}
+
+.e img {
+    width: 45px;
+    margin-left: 20px;
+    margin-top: 3px;
+    border-radius: 15px;
+}
+
+/*Botão Cartão de Débito*/
+
+.f {
+    display: flex;
+    background-color: gold;
+    width: 80vh;
+    height: 50px;
+    margin-top: 14px;
+    margin-left: 23vw;
+    justify-content: start;
+    align-items: flex-start;
+    border-radius: 15px;
+}
+
+.f p{
+    margin-top: 1px;
+    margin-left: 30px;
+    color: black;
+    font-size: 18px;
+}
+
+.f img {
+    width: 45px;
+    margin-left: 20px;
+    margin-top: 3px;
+    border-radius: 15px;
+}
+/*Botões Pix e Cartão de Débito*/
+
+#itembotaoD {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s, box-shadow 0.3s; /* Transição suave para cor e sombra */
+
+}
+
+#itembotaoD:after {
+    content: "";
+    position: absolute;
+    height: 1px; /* Espessura da linha */
+    width: 0;
+    left: 50%; /* Inicialmente no centro */
+    bottom: -2px; /* Posição abaixo do texto */
+    background-color: #FFFFFF; /* Cor neon branca */
+    transition: width 0.5s, left 0.5s; /* Transição suave para expandir */
+}
+
+#itembotaoD:hover {
+    color: #FFFFFF; /* Cor neon branca no texto */
+}
+
+/*Botão Seguir para o Pagamento*/
+
+.g a{
+    margin-left: -90px;
+}
+
+#botaoDo {
+    margin-top: 14px;
+    margin-left: 370px;
+    width: 50vh;
+    height: 50px;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0232B5;
+    border-radius: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
 }
