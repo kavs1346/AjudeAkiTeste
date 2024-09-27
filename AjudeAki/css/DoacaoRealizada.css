@@ -1,0 +1,33 @@
+.back{
+    height: auto;
+    width: 11%;
+}
+
+.coracao{
+    align-items: center;
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+    margin-top: -5%;
+
+}
+
+.texto1{
+    font-family: "Phudu", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 8%;
+    line-height: 0.1; 
+}
+
+.texto2{
+    font-family: "Phudu", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 45px;
+    color: #0232B5;
+    text-align: center;
+ 
+}
