@@ -9,15 +9,17 @@ body {
     font-family: "Phudu", system-ui;
 }
 
+/* navbar */
+
 nav {
     height: 100vh;
     width: 20vw;
     position: fixed;
-    /* background-color: antiquewhite; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: rgb(255, 255, 255);
+    
 }
 
 #logo {
@@ -88,7 +90,7 @@ nav {
 }
 
 #perfil img {
-    width: 50%; /* Tamanho ajustado para o ícone de perfil */
+    width: 60%; /* Tamanho ajustado para o ícone de perfil */
 
 }
 
@@ -194,8 +196,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 5px;
     font-size: 18px;
+    text-align: center;
     color: black;  
     text-decoration: none; 
     transition: 0.3s;
@@ -204,3 +207,47 @@ nav {
 #botao a:hover {
     transform: scale(1.1);
   }
+
+#botao a p {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+/* fim da navbar  */
+
+#nossas-acoes {
+    width: 80vw;
+    height: 20vh;
+    /* background-color: aquamarine; */
+    margin-left: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nossas-acoes p {
+    font-size: 30px;
+    font-family: "Phudu", system-ui;
+    font-weight: 600;
+    color: #0232B5;
+}
+
+/* slider  */
+
+/* slider */
+
+.container {
+    display: flex;
+    flex-direction: column; /* Alinha as divs verticalmente */
+    align-items: center; /* Centraliza as divs horizontalmente */
+    gap: 20px; /* Espaço entre as divs */
+    margin: 20px 0; /* Margem superior e inferior */
+}
+
+.div1, .div2 {
+    width: 80vw; /* Use vw em vez de % para controle melhor */
+    max-width: 800px; /* Limita a largura máxima */
+    background-color: lightblue; /* Cor de fundo */
+    text-align: center; /* Centraliza o texto */
+    margin-left: 20dvw;
+}

@@ -1,0 +1,45 @@
+#carrossel {
+    width: 80vw;
+    height: 60vh;
+    margin-left: 20vw;
+    /* background-color: rgb(19, 86, 63); */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    height: 60vh;
+    width: 100%;
+    /* max-width: 1000px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+img {
+    width: 60%;
+}
+
+.swiper {
+    height: 500px;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box; /* Para que o padding e a borda sejam incluídos na largura e altura total */
+}
+
+body {
+    margin: 0; /* Remove a margem padrão do body */
+    overflow-x: hidden; /* Esconde a scrollbar horizontal */
+}
+
