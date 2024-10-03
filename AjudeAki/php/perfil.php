@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AjudeAki</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/perfil.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/slider.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -32,7 +30,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../html/InstituiçõesParceiras.html" id="itembotao">
+                        <a href="#" id="itembotao">
                             <img src="../imgs/navbar/instituições.png" alt="">
                             <p>INSTITUÍÇÕES PARCEIRAS</p>
                         </a>
@@ -63,47 +61,3 @@
             </div>
         </div>
     </nav>
-    <div id="nossas-acoes">
-        <p>NOSSAS ÚLTIMAS AÇÕES</p>
-    </div>
-    
-    <div id="carrossel">
-        <main>  
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="project-img">
-                            <img src="../imgs/carrossel/1.png" alt="FOTO 1">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="project-img">
-                            <img src="../imgs/carrossel/2.png" alt="FOTO 2">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="project-img">
-                            <img src="../imgs/carrossel/3.png" alt="FOTO 3">
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </main>
-    </div>
-
-    <div id="necessitadas">
-        <p>NOSSAS ÚLTIMAS AÇÕES</p>
-    </div>
-    <div id="cartoes">
-        <div class="bloco"></div>
-        <div class="bloco"></div>
-        <div class="bloco"></div>
-    </div>
-
-    <script src="../javascript/script.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-</body>
-</html>
