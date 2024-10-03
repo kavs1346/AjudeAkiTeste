@@ -3,23 +3,23 @@
     border: 0;
     padding: 0;
     box-sizing: border-box; /* Para garantir que padding e bordas sejam inclusos no tamanho total dos elementos */
+    
 }
 
 body {
     font-family: "Phudu", system-ui;
+    
 }
-
-/* navbar */
 
 nav {
     height: 100vh;
     width: 20vw;
     position: fixed;
+    /* background-color: antiquewhite; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: rgb(255, 255, 255);
-    
 }
 
 #logo {
@@ -90,7 +90,7 @@ nav {
 }
 
 #perfil img {
-    width: 60%; /* Tamanho ajustado para o ícone de perfil */
+    width: 50%; /* Tamanho ajustado para o ícone de perfil */
 
 }
 
@@ -196,9 +196,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 18px;
-    text-align: center;
     color: black;  
     text-decoration: none; 
     transition: 0.3s;
@@ -208,46 +207,97 @@ nav {
     transform: scale(1.1);
   }
 
-#botao a p {
-    font-size: 18px;
-    margin-bottom: 2px;
+
+  /* BODY */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
 }
 
-/* fim da navbar  */
-
-#nossas-acoes {
-    width: 80vw;
-    height: 20vh;
-    /* background-color: aquamarine; */
-    margin-left: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
 }
 
-#nossas-acoes p {
-    font-size: 30px;
-    font-family: "Phudu", system-ui;
+.Titulo {
+    font-size: 3rem; /* Tamanho do título */
+    color: #0232B5; 
     font-weight: 600;
-    color: #0232B5;
+    font-family: 'Phudu', sans-serif;
+    font-size: 30px;
+    margin-left: 260px;
+    padding-top: 60px;
+}
+header {
+    background-color: #0033cc;
+    color: white;
+    padding: 20px 0;
 }
 
-/* slider  */
-
-/* slider */
-
-.container {
+.instituicoes-container {
     display: flex;
-    flex-direction: column; /* Alinha as divs verticalmente */
-    align-items: center; /* Centraliza as divs horizontalmente */
-    gap: 20px; /* Espaço entre as divs */
-    margin: 20px 0; /* Margem superior e inferior */
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+    padding: 20px;
+    gap: 40px;
+    max-width: 80%; 
+    margin-left: 15%; 
+    margin-right: 0; 
+    margin-top: 70px;
+
 }
 
-.div1, .div2 {
-    width: 80vw; /* Use vw em vez de % para controle melhor */
-    max-width: 800px; /* Limita a largura máxima */
-    background-color: lightblue; /* Cor de fundo */
-    text-align: center; /* Centraliza o texto */
-    margin-left: 20dvw;
+
+.instituicao {
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Para posicionamento do botão */
+    border-color: #0232B5;
+    border-width: 1px;
+
+  
 }
+
+.instituicao p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: "Phudu", system-ui;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.instituicao img {
+    width: 50%; /* Diminui o tamanho da imagem para 80% da largura do container */
+    height: auto;
+    margin-bottom: 5px;
+    object-fit: cover; /* Mantém a proporção da imagem dentro do espaço disponível */
+    
+}
+
+
+button {
+    background-color: #0033cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: -20px; /* Para que o botão fique meio para fora */
+    transform: translateX(-50%);
+    width: 190px;
+    font-family: "Phudu", system-ui;
+
+}
+
+
