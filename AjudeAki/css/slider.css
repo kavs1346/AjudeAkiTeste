@@ -33,12 +33,3 @@ img {
     align-items: center;
     justify-content: center;
 }
-
-* {
-    box-sizing: border-box; /* Para que o padding e a borda sejam incluídos na largura e altura total */
-}
-
-body {
-    margin: 0; /* Remove a margem padrão do body */
-    overflow-x: hidden; /* Esconde a scrollbar horizontal */
-}
