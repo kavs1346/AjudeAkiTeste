@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AjudeAki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/doacaoMateriais.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <img src="../imgs/navbar/original.jpg" alt="Logo">
+        </div>
+        <div id="lista">
+            <div id="perfil">
+                <a href="#">
+                    <img src="../imgs/navbar/PerfilBranco.png" alt="Perfil">
+                    <p>MEU PERFIL</p>
+                </a>
+            </div>
+            <div id="itens">
+                <ul>
+                    <li>
+                        <a href="#" id="itembotao">
+                            <img src="../imgs/navbar/home.png" alt="">
+                            <p>HOME</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="itembotao">
+                            <img src="../imgs/navbar/instituições.png" alt="">
+                            <p>INSTITUÍÇÕES PARCEIRAS</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="doacao.html" id="itembotao">
+                            <img src="../imgs/navbar/dinheiro.png" alt="">
+                            <p>DOAR EM DINHEIRO</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="itembotao">
+                            <img src="../imgs/navbar/voluntário.png" alt="">
+                            <p>SEJA UM VOLUNTÁRIO</p>
+                        </a>
+                    </li>
+                </ul>
+                <div id="voluntario">
+                    <div id="texto">
+                        <p>AINDA NÃO É UMA ONG PARCEIRA?</p>
+                    </div>
+                    <div id="botao">
+                        <a href="#" id="botao">
+                            CLIQUE AQUI
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Não preciso nem explicar né? O proprio nome ja diz o que é-->
+    <div class="a">
+        <p>PÁGINA DE DOAÇÃO</p>
+    </div>
+
+    <div class="a2">
+        <p>Selecione o seu tipo de doação</p>
+    </div>
+
+    <div class="a3">
+        <p>Informe o valor</p>
+    </div>
+
+    <div class="b">
+        
+        <div class="container-alinhado">
+            <img src="../imgs/navbar/original.jpg" alt="">
+
+                    
+            <!-- Dropdown principal, que infernal pra fazer, não me pergunta do porque tem um fundo cinza quase invisivel nele, se souber resolver, resolve, se não, não me enche >:( -->
+            <div class="dropdown">
+                
+                <button class="dropbtn">Doar materiais</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="goToPage('doacaoPixECartao.html')">Doar em dinheiro</a>
+                </div>
+            </div>
+            
+            <!-- Input Number, não faz sentido pra mim ter 3 zeros, mas ja que eu só sigo ordens, aqui estou eu, colocando 3 zeros -->
+            <div class="input-number">
+                <label for="idade"></label>
+                <div class="input-container">
+                    <input type="text" name="idade" id="idade" placeholder="R$ 000,00">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- A parte do pagamento, é so ler -->
+    <div class="d">
+        <p>CATEGORIAS</p>
+    </div>
+
+    <div class="checkbox-grid"></div>
+        <div class="container checkbox-grid">
+            <label class="checkbox-item">
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1"><span>Opção 1</span></label>
+            </label>
+            <label class="checkbox-item">
+                <input type="checkbox" name="categoria2"> Categoria 2
+            </label>
+        </div>
+        <div class="container checkbox-grid1">
+            <label class="checkbox-item">
+                <input type="checkbox" name="categoria3"> Categoria 3
+            </label>
+            <label class="checkbox-item">
+                <input type="checkbox" name="categoria4"> Categoria 4
+            </label>
+        </div>
+        <div class="container checkbox-grid2">
+            <label class="checkbox-item">
+                <input type="checkbox" name="categoria3"> Categoria 5
+            </label>
+            <label class="checkbox-item">
+                <input type="checkbox" name="categoria4"> Categoria 6
+            </label>
+        </div>
+        <div class="container checkbox-grid3">
+            <label class="checkbox-item">
+                <input type="checkbox" name="categoria3"> Categoria 7
+            </label>
+            <label class="checkbox-item">
+                <input type="checkbox" name="categoria4"> Categoria 8
+            </label>
+        </div>
+        <div class="container checkbox-grid4">
+            <label class="checkbox-item">
+                <input type="checkbox" name="categoria3"> Categoria 9
+            </label>
+            <label class="checkbox-item">
+                <input type="checkbox" name="categoria4"> Categoria 10
+            </label>
+        </div>
+        <div class="container checkbox-grid5">
+            <label class="checkbox-item">
+                <input type="checkbox" name="categoria3"> Categoria 11
+            </label>
+            <label class="checkbox-item">
+                <input type="checkbox" name="categoria4"> Categoria 12
+            </label>
+        </div>
+    </div>
