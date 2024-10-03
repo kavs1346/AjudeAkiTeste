@@ -2,7 +2,11 @@
     margin: 0;
     border: 0;
     padding: 0;
-    box-sizing: border-box; /* Para garantir que padding e bordas sejam inclusos no tamanho total dos elementos */
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* Remove qualquer overflow horizontal */
 }
 
 body {
@@ -12,14 +16,13 @@ body {
 /* navbar */
 
 nav {
-    height: 100vh;
-    width: 20vw;
+    height: 100%;
+    width: 20%;
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: rgb(255, 255, 255);
-    
 }
 
 #logo {
@@ -31,7 +34,7 @@ nav {
 }
 
 #logo img {
-    width: 70%; /* Ajuste do tamanho da logo */
+    width: 70%;
 }
 
 #lista {
@@ -39,7 +42,6 @@ nav {
     height: 75%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     background-color: #0232B5;
     border-radius: 0 20px 0 0;
 }
@@ -51,7 +53,6 @@ nav {
     justify-content: center;
     justify-items: center;
     text-align: center;
-    /* background-color:darkslategrey; */
     border-radius: 0 20px 0 0;
     margin-bottom: 38px;
     margin-top: 10px;
@@ -75,43 +76,39 @@ nav {
 #perfil a::after {
     content: "";
     position: absolute;
-    height: 1px; /* Altura da linha */
-    background-color: white; /* Cor da linha */
-    width: 0; /* Largura inicial da linha */
-    left: 50%; /* Começa no centro */
-    bottom: 0; /* Posiciona no fundo do elemento */
-    transition: width 0.4s ease, left 0.4s ease; /* Animação suave */
+    height: 1px;
+    background-color: white;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    transition: width 0.4s ease, left 0.4s ease;
 }
 
 #perfil a:hover::after {
-    width: 100%; /* Expande a linha para cobrir toda a largura */
-    left: 0; /* Faz com que a linha se estenda para os lados */
-    box-shadow: 0 2px 30px #FFFFFF; /* Efeito de brilho neon branco na linha inferior */
+    width: 100%;
+    left: 0;
+    box-shadow: 0 2px 30px #FFFFFF;
 }
 
 #perfil img {
-    width: 60%; /* Tamanho ajustado para o ícone de perfil */
-
+    width: 60%;
 }
 
 #itens {
     width: 100%;
     height: 80%;
-    /* background-color: darkcyan; */
 }
 
 #itens ul {
     width: 100%;
     height: 50%;
-    /* background-color: dodgerblue; */
 }
 
 #itens li {
     width: 100%;
     height: 20%;
-    /* background-color: rgb(124, 58, 172); */
     display: flex;
-    align-items: center; /* Isso alinha o conteúdo (imagem e texto) no centro vertical */
+    align-items: center;
     margin-bottom: 12px;
 }
 
@@ -122,53 +119,50 @@ nav {
     text-decoration: none;
     color: white;
     position: relative;
-    transition: color 0.3s, box-shadow 0.3s; /* Transição suave para cor e sombra */
-
+    transition: color 0.3s, box-shadow 0.3s;
 }
 
 #itembotao:after {
     content: "";
     position: absolute;
-    height: 1px; /* Espessura da linha */
+    height: 1px;
     width: 0;
-    left: 50%; /* Inicialmente no centro */
-    bottom: -2px; /* Posição abaixo do texto */
-    background-color: #FFFFFF; /* Cor neon branca */
-    transition: width 0.5s, left 0.5s; /* Transição suave para expandir */
+    left: 50%;
+    bottom: -2px;
+    background-color: #FFFFFF;
+    transition: width 0.5s, left 0.5s;
 }
 
 #itembotao:hover {
-    color: #FFFFFF; /* Cor neon branca no texto */
+    color: #FFFFFF;
 }
 
 #itembotao:hover:after {
-    width: 100%; /* Expande a linha completamente */
-    left: 0; /* Alinha à esquerda quando expandida */
-    box-shadow: 0 2px 30px #FFFFFF; /* Efeito de brilho neon branco na linha inferior */
+    width: 100%;
+    left: 0;
+    box-shadow: 0 2px 30px #FFFFFF;
 }
 
 #itens img {
-    width: 10%; /* Ajuste o tamanho da imagem para evitar que ela aumente */
-    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    width: 20px;
+    margin-right: 10px;
     margin-left: 10%;
 }
 
 #itens p {
-    margin: 0; /* Remova o espaçamento extra do parágrafo */
-    font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 #voluntario {
     height: 45%;
     width: 100%;
-    /* background-color: mediumorchid; */
     margin-top: 36px;
 }
 
 #texto {
     height: 40%;
     width: 100%;
-    /* background-color: red;  */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,14 +170,12 @@ nav {
 
 #texto p {
     font-size: 20px;
-    text-align: center; /* Centraliza o texto dentro do parágrafo */
-    
+    text-align: center;
 }
 
 #botao {
     width: 100%;
     height: 40%;
-    /* background-color: orange; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,48 +198,42 @@ nav {
 
 #botao a:hover {
     transform: scale(1.1);
-  }
-
-#botao a p {
-    font-size: 18px;
-    margin-bottom: 2px;
 }
 
 /* fim da navbar  */
 
-#nossas-acoes {
-    width: 80vw;
-    height: 20vh;
-    /* background-color: aquamarine; */
-    margin-left: 20vw;
+#nossas-acoes,
+#necessitadas {
+    width: calc(100% - 20%); /* Garante que o conteúdo ocupe o espaço restante */
+    height: auto;
+    margin-left: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
-#nossas-acoes p {
+#nossas-acoes p,
+#necessitadas p {
     font-size: 30px;
     font-family: "Phudu", system-ui;
-    font-weight: 600;
-    color: #0232B5;
 }
 
-/* slider  */
-
-/* slider */
-
-.container {
+/* Estilo para os blocos */
+#cartoes {
+    width: calc(100% - 20%); /* Garante que o conteúdo ocupe o espaço restante */
+    height: 15em;
+    margin-left: 20%;
     display: flex;
-    flex-direction: column; /* Alinha as divs verticalmente */
-    align-items: center; /* Centraliza as divs horizontalmente */
-    gap: 20px; /* Espaço entre as divs */
-    margin: 20px 0; /* Margem superior e inferior */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: aquamarine;
 }
 
-.div1, .div2 {
-    width: 80vw; /* Use vw em vez de % para controle melhor */
-    max-width: 800px; /* Limita a largura máxima */
-    background-color: lightblue; /* Cor de fundo */
-    text-align: center; /* Centraliza o texto */
-    margin-left: 20dvw;
+.bloco {
+    width: 25%;
+    height: 175px; /* Definindo uma altura para os blocos */
+    background-color: red; /* Cor de fundo para visualização */
+    margin: 1em auto; /* Margin para espaçamento */
 }
