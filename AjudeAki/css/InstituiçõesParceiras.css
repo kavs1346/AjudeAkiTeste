@@ -209,7 +209,7 @@ nav {
 
 
   /* BODY */
-  * {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -250,7 +250,6 @@ header {
 
 }
 
-
 .instituicao {
     background-color: white;
     border: 1px solid #ddd;
@@ -262,7 +261,6 @@ header {
     border-color: #0232B5;
     border-width: 1px;
 
-  
 }
 
 .instituicao p {
@@ -282,7 +280,6 @@ header {
     
 }
 
-
 button {
     background-color: #0033cc;
     color: white;
@@ -299,5 +296,4 @@ button {
     font-family: "Phudu", system-ui;
 
 }
-
 
